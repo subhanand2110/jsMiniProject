@@ -1,0 +1,161 @@
+body {
+  background: url("images/school4.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#left {
+  background: url("images/schoo2_login.jpg");
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 310px;
+}
+#right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 310px;
+}
+#signin {
+  margin-top: 15%;
+}
+button {
+  border-radius: 16px;
+}
+/* button:hover {
+  color: black;
+} */
+.grad1 {
+  background-image: linear-gradient(
+    to right,
+    rgb(71, 71, 155),
+    rgb(160, 63, 160)
+  );
+  color: white;
+}
+/* sign-up css */
+#signbg {
+  background: url("images/signup.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#signbg .container {
+  margin-top: 5%;
+}
+#signupf {
+  width: 421px;
+  padding: 40px;
+  background-image: linear-gradient(#22c1c3, #fdbb2d);
+}
+#signupf label {
+  color: black;
+}
+span {
+  font-style: italic;
+  color: rgb(58, 7, 129);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+.happy {
+  font-size: 30px;
+  font-weight: 50;
+  font-family: "Ultra", serif;
+  display: flex;
+  gap: 10px;
+  animation-name: fontGrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+  transition-timing-function: ease-in-out;
+}
+@keyframes fontGrow {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.learning {
+  font-size: 30px;
+  font-weight: 50;
+  font-family: "Ultra", serif;
+  display: flex;
+  gap: 10px;
+  animation-name: fontGrowReverse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  transition-timing-function: ease-in-out;
+}
+@keyframes fontGrowReverse {
+  0% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(2);
+  }
+}
+small {
+  color: red;
+}
+.sign_up:hover{
+color:black;
+}
+@media only screen and (max-width: 768px) {
+  #left{
+    display: none;
+  }
+  #right{
+    align-content: center;
+    width:400px;
+    border-radius: 0%;
+   
+  }
+  .data{
+    width:200px;
+  }
+ 
+}
+@media only screen and (max-width: 600px) {
+  #signin {
+    margin-top: 0%;
+  }
+  #right{
+    width:250px;
+    border-radius: 0%;
+    margin:20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #signbg{
+    background: none;
+  }
+  #quotes{
+    display: none;
+  }
+  .signupf {
+    align-content: center;
+      width: 421px;
+  }
+.input{
+  width:120px;
+}
+}
