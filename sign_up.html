@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="signbg">
+    <div class="container "> <!-- d-flex justify-content-end align-items-end -->
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h2 id="quotes">" No school without <span>spectacular eccentries</span> and <span>crazy hearts</span> is worth
+                        attending. "
+                    </h2>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-end signupf">
+                <form onsubmit="names(event)" class=" border rounded-3 border-light border-3 mb-5" id="signupf">
+                    <div class="row mb-3">
+                        <label class="col-6"><b>Name</b></label>
+                        <div class="col-6">
+                            <input type="text" id="uname" class="shadow form-control input">
+                            <small id="nameerr"></small>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-6"><b>Birthday</b></label>
+                        <div class="col-6">
+                            <input class="shadow form-control input" type="date" id="udob">
+                            <small id="doberr"></small>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-6"><b>Gender</b></label>
+                        <div class="col-6">
+                            <input type="radio" id="male" name="gender" value="male">Male<br>
+                            <input type="radio" id="female" name="gender" value="female">Female<br>
+                            <small id="gnderr"></small>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-6"><b>E-mail</b></label>
+                        <div class="col-6">
+                            <input class="shadow form-control input" type="email" id="umail">
+                            <small id="mailerr"></small>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-6"><b>Role</b></label>
+                        <div class="col-6">
+                            <select id="urole" class="shadow form-control input">
+                                <option disabled="disabled" selected="selected" value="">Choose a role</option>
+                                <option>Student</option>
+                                <option>Teacher</option>
+                            </select>
+                            <small id="roleerr"></small>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-6"><b>Contact</b></label>
+                        <div class="col-6">
+                            <input type="number" id="ucontact" class="shadow form-control input">
+                            <small id="conerr"></small>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <label class="col-6"><b>Password</b></label>
+                        <div class="col-6">
+                            <input type="password" id="upsw1" class="shadow form-control input">
+                            <small id="pswerr"></small>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-6"><b>Confirm-Password</b></label>
+                        <div class="col-6">
+                            <input type="password" id="upsw2" class="shadow form-control input">
+                            <small id="pswerr2"></small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <button type="submit" class="border-white text-center btn-primary  ps-3 pe-3  shadow">
+                            SIGN
+                            IN</button> <!-- onclick="signIn()" -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="javascript1.js"></script>
+</body>
+
+</html>
